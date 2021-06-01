@@ -2,16 +2,15 @@ require("dotenv").config();
 
 const express = require("express");
 const bodyParser = require("body-parser");
-const cors = require("cors");
-const authMiddleware = require("./middlewares/auth.middleware")
 
-    //connect DB
+//connect DB
 require("./config/db.config");
 
 const app = express();
 
-app.use(cors());
-
+//Middleware
+app.use(bodyParser.json());
+app.use(bodyParser.urlencoded({ extended: false }));
 
 //Routes
 

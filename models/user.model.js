@@ -10,6 +10,7 @@ const UserSchema = new Schema({
     },
     nickname: {
         type: String,
+        unique: true,
         require: [true, "Apelido é obrigatório"],
         maxlength: 100
     },
@@ -19,8 +20,6 @@ const UserSchema = new Schema({
         maxlength: 100
     },
 
-},
-    { timestamps: true }
-);
+}, { timestamps: true });
 
 module.exports = model("user", UserSchema);
