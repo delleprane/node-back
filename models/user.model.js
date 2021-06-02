@@ -12,13 +12,16 @@ const UserSchema = new Schema({
         type: String,
         unique: true,
         require: [true, "Apelido é obrigatório"],
-        maxlength: 100
+        maxlength: [100, 'Você passou dos 100 caracteres.'],
     },
 
     bio: {
         type: String,
         maxlength: 100
     },
+    address: {
+        type: String
+    }
 
 }, { timestamps: true });
 
