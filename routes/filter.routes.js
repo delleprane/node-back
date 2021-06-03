@@ -24,10 +24,10 @@ search.post('/search', async(req, res) => {
 search.post('/search/name', async(req, res) => {
     try {
         const { name } = req.body
-        const userSearching = await User.find({
+        const userNameSearching = await User.find({
             name: { $regex: '.*' + name + '.*' }
         })
-        res.status(200).json({ userSearching })
+        res.status(200).json({ userNameSearching })
     } catch (error) {
         res.status(500).json({ message: "Erro ao buscar usuário" })
     }
