@@ -16,7 +16,7 @@
 | Delete   | /perfil/:id      | {id do usuário}    |  -   |  Deleta o usuário |
 | PATCH   | /perfil/:id      | -  |  {usuário atualizado}   | Edita/Atualiza o usuário |
 | POST   | /search   | -  |  {filtro de usuário por nickname}   | Busca usuário por nickname |
-| GET   | /home   | -  |  {todos os usuários}   | Lista todos os usuários |
+| GET   | /   | -  |  {todos os usuários}   | Lista todos os usuários |
 
 
 ## Respostas
