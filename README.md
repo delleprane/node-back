@@ -14,9 +14,9 @@
 | :---         |     :---:      |          ---: |      :---:      |          ---: |
 | POST   | /auth/signup     | {name, lastname, nickname,bio, address}    |  {usuário}  | Cria um novo usuário  |
 | Delete   | /perfil/:id      | {id do usuário}    |  -   |  Deleta o usuário |
-| PATCH   | /perfil/:id      | -  |  {usuário atualizado}   | Edita/Atualiza o usuário |
-| POST   | /search   | -  |  {filtro de usuário por nickname}   | Busca usuário por nickname |
-| GET   | /   | -  |  {todos os usuários}   | Lista todos os usuários |
+| PATCH   | /perfil/:id      |  -   |  {usuário atualizado}   | Edita/Atualiza o usuário |
+| POST   | /search   |  -   |  {filtro de usuário por nickname}   | Busca usuário por nickname |
+| GET   | /   |  -   |  {todos os usuários}   | Lista todos os usuários |
 
 
 ## Respostas
