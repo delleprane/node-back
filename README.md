@@ -4,7 +4,7 @@
 
  O código estará no ar para testes no Heroku.
 
-[Heroku](https://choosealicense.com/licenses/mit/)
+[Heroku](https://test-fernanda.herokuapp.com/)
 
  Como banco de dados foi utilizado o MongoDB, será necessário definir as variáveis de ambiente no .env  para ter acesso ao banco de dados na sua máquina.
 
