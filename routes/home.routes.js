@@ -6,13 +6,13 @@ const userModel = require("../models/user.model");
 
 const homeRouter = Router();
 
-homeRouter.get("/home", async (req, res) => {
+homeRouter.get("/", async(req, res) => {
     try {
-      const home = await userModel.find();
-      res.status(200).json(home);
+        const home = await userModel.find();
+        res.status(200).json(home);
     } catch (error) {
-      res.status(500).json({ message: "Erro ao trazer os usuários" });
+        res.status(500).json({ message: "Erro ao trazer os usuários" });
     }
-  });
-  
-  module.exports = homeRouter;
+});
+
+module.exports = homeRouter;
